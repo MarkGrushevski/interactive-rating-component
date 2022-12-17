@@ -1,7 +1,11 @@
-import styles from "RatingBar.module.scss"
+import styles from "@/components/RatingSection/RatingBar/RatingBar.module.scss"
+import { useState } from "react"
 
 export const RatingButton = ({ children }) => {
-    return <button className={`${styles.RatingBar__star} starWrapper`}>
-        {children}
-    </button>
+    const [isActive, setIsActive] = useState(false)
+
+    return <button
+        onClick={() => setIsActive(true)}
+        className={`${isActive ? "activeStar" : ""} ${styles.RatingBar__star} starWrapper`}
+    >{children}</button>
 }

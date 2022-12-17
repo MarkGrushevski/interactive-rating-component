@@ -1,3 +1,3 @@
 export const ThankYouSection = () => {
-  return <></>;
-};
+    return <></>
+}

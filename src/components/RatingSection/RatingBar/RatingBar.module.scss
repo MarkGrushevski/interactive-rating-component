@@ -4,14 +4,6 @@
         justify-content: space-between;
     }
 
-    &__star {
-        &:hover {
-            background-color: var(--orange-primary);
-            color: var(--white);
-            transition: all 0.4s ease;
-        }
-    }
-
     &__submit {
         background-color: var(--orange-primary);
         color: var(--white);

@@ -1,0 +1,36 @@
+.RatingRadioButton {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &__star {
+        position: absolute;
+
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+
+        display: block;
+        appearance: none;
+
+        &:hover {
+            background-color: var(--orange-primary);
+            color: var(--white);
+            transition: all 0.4s ease;
+        }
+
+        &:checked {
+            background-color: var(--medium-grey);
+            color: var(--white);
+            transition: all 0.4s ease;
+        }
+    }
+
+    label {
+        width: 100%;
+        z-index: 1;
+    }
+}

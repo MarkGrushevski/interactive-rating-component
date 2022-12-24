@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
 :root {
+    /* sizes */
+    --radius: 15px;
     /* font */
     --ff-base: "Overpass", sans-serif;
     --fs-base: 15px;
@@ -8,6 +10,7 @@
     --fw-bold: 700;
     /* colors */
     --orange-primary: hsl(25, 97%, 53%);
+    --orange-secondary: orange;
     --white: hsl(0, 0%, 95%);
 
     --very-dark-blue: hsl(216, 12%, 8%);
@@ -22,6 +25,8 @@
 *::after {
     box-sizing: border-box;
     border: 0;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 img {
@@ -31,10 +36,8 @@ img {
 }
 
 button {
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
     cursor: pointer;
+    color: inherit;
 }
 
 body {
@@ -59,7 +62,7 @@ body {
     background-color: var(--dark-blue);
     color: var(--light-grey);
 
-    border-radius: 15px;
+    border-radius: var(--radius);
 
     max-width: 340px;
     padding: 20px;
@@ -74,8 +77,3 @@ body {
     border-radius: 50%;
 }
 
-.activeStar {
-    background-color: var(--medium-grey);
-    color: var(--white);
-    transition: all 0.4s ease;
-}

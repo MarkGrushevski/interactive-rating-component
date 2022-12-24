@@ -1,16 +1,27 @@
+import { useState } from "react"
 import styles from "./RatingBar.module.scss"
-import { RatingButton } from "./RatingButton.jsx"
+import { RatingRadioButton } from "./RatingRadioButton.jsx"
 
-export const RatingBar = () => {
-    return <div className={styles.RatingBar}>
+export const RatingBar = ({ setSelectedRating }) => {
+    const stars = [1, 2, 3, 4, 5]
+
+    const [value, setValue] = useState()
+
+    const onChange = (ev) => {
+        setValue(ev.target.value)
+    }
+    const onSubmit = (ev) => {
+        ev.preventDefault()
+        setSelectedRating(value)
+    }
+
+    return <form onSubmit={onSubmit} className={styles.RatingBar}>
         <div className={styles.RatingBar__stars}>
-            <RatingButton>1</RatingButton>
-            <RatingButton>2</RatingButton>
-            <RatingButton>3</RatingButton>
-            <RatingButton>4</RatingButton>
-            <RatingButton>5</RatingButton>
+            {stars.map((value) => {
+                return <RatingRadioButton key={value} rating={value} value={value} onChange={onChange} />
+            })}
         </div>
-        <button className={styles.RatingBar__submit}>SUBMIT</button>
-    </div>
+        <button type="submit" className={styles.RatingBar__submit}>SUBMIT</button>
+    </form>
 
 }

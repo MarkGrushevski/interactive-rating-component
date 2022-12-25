@@ -3,7 +3,7 @@ import { RatingCard } from "@/components/RatingCard/RatingCard.jsx"
 import { RatingBar } from "@/components/RatingSection/RatingBar/RatingBar.jsx"
 import styles from "./RatingSection.module.scss"
 
-export const RatingSection = ({setSelectedRating}) => {
+export const RatingSection = ({ setSelectedRating }) => {
     return <RatingCard>
         <div className={styles.RatingSection}>
             <div className={`${styles.RatingSection__starIcon} starWrapper`}>

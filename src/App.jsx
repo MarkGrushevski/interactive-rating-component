@@ -13,8 +13,8 @@ export const App = () => {
     }, [selectedRating])
 
     if (isRated) {
-        return <ThankYouSection selectedRating={selectedRating} />
+        return <ThankYouSection selectedRating={selectedRating}/>
     } else {
-        return <RatingSection setSelectedRating={setSelectedRating} />
+        return <RatingSection setSelectedRating={setSelectedRating}/>
     }
 }

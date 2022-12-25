@@ -12,19 +12,6 @@ export const RatingRadioButton = ({ rating, ...props }) => {
             type="radio"
             name="rating"
         />
-        <label htmlFor={`ratingButton_${rating}`}>{rating}</label>
-        {/*
-        <label htmlFor={`ratingButton_${rating}`}>{rating}
-            <input
-
-                className={styles.RatingRadioButton__star}
-                id={`ratingButton_${rating}`}
-                value={rating}
-                {...props}
-                type="radio"
-                name="rating"
-            />
-        </label>
-        */}
+        <label className={styles.RatingRadioButton__label} htmlFor={`ratingButton_${rating}`}>{rating}</label>
     </div>
 }

@@ -1,20 +1,20 @@
 .RatingSection {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    &__starIcon {
-        img {
-            object-fit: scale-down;
-        }
+  &__starIcon {
+    img {
+      object-fit: scale-down;
     }
+  }
 
-    &__title {
-        font-weight: var(--fw-bold);
-        font-size: 1.4rem;
-        color: var(--white);
-    }
+  &__title {
+    font-weight: var(--fw-bold);
+    font-size: 1.4rem;
+    color: var(--white);
+  }
 
-    &__description {
-        margin: 15px 0 20px;
-    }
+  &__description {
+    margin: 15px 0 20px;
+  }
 }

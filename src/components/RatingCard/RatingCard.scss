@@ -1,23 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap";
 
 :root {
     /* sizes */
     --radius: 15px;
+
     /* font */
     --ff-base: "Overpass", sans-serif;
     --fs-base: 15px;
     --fw-normal: 400;
     --fw-bold: 700;
-    /* colors */
-    --orange-primary: hsl(25, 97%, 53%);
-    --orange-secondary: orange;
-    --white: hsl(0, 0%, 95%);
 
-    --very-dark-blue: hsl(216, 12%, 8%);
-    --dark-blue: hsl(213, 20%, 15%);
-    --dark-grey: hsl(213, 15%, 20%);
-    --medium-grey: hsl(216, 12%, 54%);
-    --light-grey: hsl(217, 12%, 63%);
+    /* colors */
+    --orange-primary: hsl(25deg 97% 53%);
+    --orange-secondary: orange;
+    --white: hsl(0deg 0% 95%);
+    --very-dark-blue: hsl(216deg 12% 8%);
+    --dark-blue: hsl(213deg 20% 15%);
+    --dark-grey: hsl(213deg 15% 20%);
+    --medium-grey: hsl(216deg 12% 54%);
+    --light-grey: hsl(217deg 12% 63%);
 }
 
 *,
@@ -46,10 +47,8 @@ body {
 
 #root {
     background-color: var(--very-dark-blue);
-
     width: 100vw;
     height: 100vh;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,9 +60,7 @@ body {
     font-weight: var(--fw-normal);
     background-color: var(--dark-blue);
     color: var(--light-grey);
-
     border-radius: var(--radius);
-
     max-width: 340px;
     padding: 20px;
 }
@@ -71,7 +68,6 @@ body {
 .starWrapper {
     background-color: var(--dark-grey);
     text-align: center;
-
     width: 42px;
     height: 42px;
     border-radius: 50%;

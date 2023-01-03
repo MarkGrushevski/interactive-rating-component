@@ -19,13 +19,7 @@ export const RatingBar = ({ setSelectedRating }) => {
         <form onSubmit={onSubmit} className={styles.RatingBar}>
             <div className={styles.RatingBar__stars}>
                 {stars.map((value) => {
-                    return (
-                        <RatingRadioButton
-                            rating={value}
-                            onChange={onChange}
-                            key={value}
-                        />
-                    );
+                    return <RatingRadioButton rating={value} onChange={onChange} key={value} />;
                 })}
             </div>
             <button type="submit" className={styles.RatingBar__submit}>

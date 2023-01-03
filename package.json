@@ -26,7 +26,7 @@
         "src/**/*.scss": [
             "stylelint --fix"
         ],
-        "src/**/*.{js,jsx,json,html,md}": [
+        "src/**/*.{js,jsx,json,html,md,scss}": [
             "prettier --write"
         ]
     },

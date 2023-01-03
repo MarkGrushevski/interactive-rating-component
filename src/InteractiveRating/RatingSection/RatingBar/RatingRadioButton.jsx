@@ -1,4 +1,4 @@
-import styles from "@/components/RatingSection/RatingBar/RatingRadioButton.module.scss";
+import styles from "@InteractiveRating/RatingSection/RatingBar/RatingRadioButton.module.scss";
 
 export const RatingRadioButton = ({ rating, ...props }) => {
     return (
@@ -11,10 +11,7 @@ export const RatingRadioButton = ({ rating, ...props }) => {
                 type="radio"
                 name="rating"
             />
-            <label
-                className={styles.RatingRadioButton__label}
-                htmlFor={`ratingButton_${rating}`}
-            >
+            <label className={styles.RatingRadioButton__label} htmlFor={`ratingButton_${rating}`}>
                 {rating}
             </label>
         </div>

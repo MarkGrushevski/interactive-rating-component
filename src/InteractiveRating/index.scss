@@ -41,30 +41,6 @@ button {
     color: inherit;
 }
 
-body {
-    margin: 0;
-}
-
-#root {
-    background-color: var(--very-dark-blue);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ratingCard {
-    font-family: var(--ff-base);
-    font-size: var(--fs-base);
-    font-weight: var(--fw-normal);
-    background-color: var(--dark-blue);
-    color: var(--light-grey);
-    border-radius: var(--radius);
-    max-width: 340px;
-    padding: 20px;
-}
-
 .starWrapper {
     background-color: var(--dark-grey);
     text-align: center;
@@ -72,4 +48,3 @@ body {
     height: 42px;
     border-radius: 50%;
 }
-

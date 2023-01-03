@@ -1,0 +1,11 @@
+.LayoutRatingCard {
+    font-family: var(--ff-base);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-normal);
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+    border-radius: var(--radius);
+    display: inline-block;
+    max-width: 340px;
+    padding: 20px;
+}

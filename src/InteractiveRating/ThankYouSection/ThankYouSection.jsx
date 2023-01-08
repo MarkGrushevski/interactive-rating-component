@@ -5,7 +5,7 @@ import { LayoutRatingCard } from "@InteractiveRating/LayoutRatingCard/LayoutRati
 export const ThankYouSection = ({ selectedRating }) => {
     return (
         <LayoutRatingCard>
-            <div className={styles.ThankYouSection}>
+            <div aria-live="polite" role="status" className={styles.ThankYouSection}>
                 <div className={`${styles.ThankYouSection__image}`}>
                     <img src={thankYouImage} alt="" />
                 </div>

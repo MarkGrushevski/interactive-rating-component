@@ -17,14 +17,17 @@ export const RatingBar = ({ setSelectedRating }) => {
 
     return (
         <form onSubmit={onSubmit} className={styles.RatingBar}>
-            <div className={styles.RatingBar__stars}>
-                {stars.map((value) => {
-                    return <RatingRadioButton rating={value} onChange={onChange} key={value} />;
-                })}
-            </div>
-            <button type="submit" className={styles.RatingBar__submit}>
-                SUBMIT
-            </button>
+            <fieldset>
+                <legend>Please select a rating</legend>
+                <div className={styles.RatingBar__stars}>
+                    {stars.map((value) => {
+                        return <RatingRadioButton rating={value} onChange={onChange} key={value} />;
+                    })}
+                </div>
+                <button type="submit" className={styles.RatingBar__submit}>
+                    SUBMIT
+                </button>
+            </fieldset>
         </form>
     );
 };

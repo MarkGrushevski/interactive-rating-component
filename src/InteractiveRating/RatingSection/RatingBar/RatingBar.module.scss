@@ -1,4 +1,15 @@
 .RatingBar {
+    fieldset {
+        margin: 0;
+        padding: 0;
+
+        legend {
+            display: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
     &__stars {
         display: flex;
         justify-content: space-between;
